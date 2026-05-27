@@ -1,0 +1,16 @@
+{
+    "name": "Solar System Explorer",
+    "short_name": "Solar PWA",
+    "description": "An educational Progressive Web App about planets.",
+    "start_url": "solar-system.html",
+    "display": "standalone",
+    "background_color": "#0b1026",
+    "theme_color": "#18224a",
+    "icons": [
+        {
+            "src": "app-icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}
