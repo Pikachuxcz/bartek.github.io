@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Explorer</title>
+
+    <link rel="stylesheet" href="solar-style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="app-icon.svg">
+</head>
+<body>
+
+    <header>
+        <h1>Solar System Explorer</h1>
+        <p>Learn about planets in our solar system.</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Choose a Topic</h2>
+
+            <select id="topicMenu">
+                <option value="">-- Select a Planet --</option>
+            </select>
+
+            <button id="installButton" hidden>Install App</button>
+        </section>
+
+        <section class="card" id="contentCard">
+            <h2 id="topicTitle">Welcome</h2>
+            <div id="planetImage" class="planet">🪐</div>
+            <p id="topicDescription">
+                Select a planet from the menu to learn more.
+            </p>
+
+            <button id="speakButton">Read Aloud</button>
+        </section>
+
+        <section class="card">
+            <h2>App Links</h2>
+            <p><a href="promo-page.html">Promotional Page</a></p>
+            <p><a href="documentation.html">User Documentation</a></p>
+            <p><a href="programmer-documentation.html">Programmer Documentation</a></p>
+            <p><a href="index.html">Return to Main Page</a></p>
+        </section>
+    </main>
+
+    <script src="solar-app.js"></script>
+
+</body>
+</html>
