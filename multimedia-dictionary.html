@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Dictionary</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6ff;
+            margin: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1f3c88;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        select, textarea, button {
+            font-size: 18px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        select {
+            width: 250px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            resize: none;
+        }
+
+        button {
+            background-color: #1f3c88;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0f255c;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 25px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Multimedia Dictionary</h1>
+
+        <div class="section">
+            <label for="wordSelect">Choose a Word:</label>
+            <br>
+
+            <select id="wordSelect" onchange="showWord()">
+                <option value="">-- Select a Word --</option>
+
+                <option value="Apple" data-sentence="The red apple is on the table.">
+                    Apple
+                </option>
+
+                <option value="Dog" data-sentence="The dog likes to run in the park.">
+                    Dog
+                </option>
+
+                <option value="Sun" data-sentence="The sun shines brightly in the sky.">
+                    Sun
+                </option>
+
+                <option value="Book" data-sentence="I read a book before bedtime.">
+                    Book
+                </option>
+
+                <option value="Car" data-sentence="The blue car drives down the road.">
+                    Car
+                </option>
+            </select>
+
+            <button onclick="speakWord()">Speak Word</button>
+        </div>
+
+        <div class="section">
+            <label for="sentenceDisplay">Sentence:</label>
+            <br>
+
+            <textarea id="sentenceDisplay" readonly></textarea>
+
+            <br>
+
+            <button onclick="speakSentence()">Speak Sentence</button>
+        </div>
+
+        <a class="back-link" href="index.html">Return to Main Page</a>
+    </div>
+
+    <script src="dictionary.js"></script>
+
+</body>
+</html>
